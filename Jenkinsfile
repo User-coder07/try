@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Clone your GitHub repository
-                git 'https://github.com/User-coder07/try.git'
+                git branch: 'main' ,url:'https://github.com/User-coder07/try.git'
             }
         }
 
