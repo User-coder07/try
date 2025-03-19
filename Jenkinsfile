@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Clone your GitHub repository
-                git branch: 'main' ,url:'https://github.com/User-coder07/try.git'
+                git branch: 'main' , url:'https://github.com/User-coder07/try.git'
             }
         }
 
@@ -22,7 +22,7 @@ pipeline {
         stage('Run Java Program') {
             steps {
                     // Execute the Java program with input (Example: Finding primes between 10 and 50)
-                    bat 'echo 10 50 | java Addition'
+                    bat 'java Addition'
             }      
             
         }
