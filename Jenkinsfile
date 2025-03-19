@@ -12,16 +12,15 @@ pipeline {
         }
         stage('Compile Java Code') {
             steps {
-                script {
                     bat '"%JAVA_HOME%\\bin\\javac" Addition.java'
                 }
-            }
+            
         }
         stage('Run Java Program') {
             steps {
-                script {
+                
                     bat '"%JAVA_HOME%\\bin\\java" Addition'
-                }
+                
             }
         }
     }
