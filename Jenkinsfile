@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/User-coder07/try.git'
+                git branch: 'main' , url: 'https://github.com/User-coder07/try.git'
             }
         }
         stage('Compile Java Code') {
